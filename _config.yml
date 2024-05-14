@@ -13,35 +13,48 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+title: Francesca Giannetti
+email: fg@francescagiannetti.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
-minimal_mistakes_skin: default
+  portfolio website for Francesca Giannetti
+twitter_username: jo_frankie
+github_username: giannetti
+minimal_mistakes_skin: dirt
 search: true
+search_full_content: true
+search_provider: lunr
+lunr:
+  search_within_pages: true
 
 # Build settings
 markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
 
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:path/
+
+# comments
+comments:
+  provider: "disqus"
+  disqus:
+    shortname: "portfolio-84oensokxg"
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+   - Gemfile
+   - Gemfile.lock
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
@@ -56,36 +69,28 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-remote-theme
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Francesca Giannetti"
+  avatar : "/assets/images/fg-2022-headshot.jpg"
+  bio    : "Digital humanities librarian with interests in romance literatures, music, running, and cats."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:francesca.giannetti@rutgers.edu"
+    - label: "Mastodon"
+      icon: "fab fa-fw fa-mastodon"
+      url: "https://mstdn.social/@jo_frankie"
+    - label: "Bluesky"
+      icon: "fa-brands fa-bluesky"
+      url: "https://bsky.app/profile/jofrankie.bsky.social"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/giannetti"
+    - label: "Google Scholar"
+      icon: "ai ai-google-scholar-square ai-fw"
+      url: "https://scholar.google.com/citations?user=G3dOYqcAAAAJ&hl=en"
 
 defaults:
   # _posts
@@ -95,10 +100,10 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
+      read_time: false
       comments: true
-      share: true
-      related: true
+      share: false
+      related: false
   # _pages
   - scope:
       path: "_pages"
@@ -106,6 +111,14 @@ defaults:
     values:
       layout: single
       author_profile: true
+  # _projects
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: single
+      author_profile: false
+      share: false
 
 category_archive:
   type: liquid

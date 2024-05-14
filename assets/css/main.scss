@@ -1,0 +1,22 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+# search:false
+---
+
+/* custom drop cap */
+/* thx to http://code.iamkate.com/html-and-css/creating-drop-caps/ */
+.dropcap {
+    float: left;
+    font-size: 3.26em;
+    line-height : 0.5;
+    margin: 0.205em 0.153em 0 0;
+}
+
+.dropcap + span{
+	margin-left: -0.5em;
+}
+
+@charset "utf-8";
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
