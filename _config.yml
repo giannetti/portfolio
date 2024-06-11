@@ -126,3 +126,7 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+# attempting to call jQuery before any other javascripts to fix lunr search
+footer_scripts:
+  - /assets/js/vendor/jquery/jquery-3.6.0.js
