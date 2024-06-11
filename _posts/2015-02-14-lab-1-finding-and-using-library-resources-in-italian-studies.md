@@ -44,13 +44,7 @@ As we work through this question, I will demonstrate how to save bibliographic r
 
 You&#8217;ve chosen the _Scapigliatura_ artistic movement of the mid- to late-nineteenth century as your research topic. To get started, you consult some print reference sources (1-3) and do a Google search and find one Italian website (4). Explain what you find in these sources. How reliable is this information? Would you use these sources for your research paper? Why, or why not? Some factors to consider:
 
-<div id="attachment_353" style="width: 819px" class="wp-caption align-center">
-  <a href="http://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-14-at-12.34.34-PM.png"><img aria-describedby="caption-attachment-353" class="size-full wp-image-353" src="http://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-14-at-12.34.34-PM.png" alt="Evaluating Information Resources" width="809" height="207" srcset="https://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-14-at-12.34.34-PM.png 809w, https://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-14-at-12.34.34-PM-300x77.png 300w, https://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-14-at-12.34.34-PM-640x164.png 640w" sizes="(max-width: 809px) 100vw, 809px" /></a>
-  
-  <p id="caption-attachment-353" class="wp-caption-text">
-    Evaluating Information Resources
-  </p>
-</div>
+![Evaluating Information Resources](/assets/images/Screen-Shot-2015-02-14-at-12.34.34-PM.png){: .align-center}
 
 ### Tips
 
@@ -72,18 +66,12 @@ You are looking for a still frame and a promotional image or film (for example,
 
 ### Search engines and digital libraries to use
 
-  * Google Advanced Image Search &#8211; <a href="https://www.google.com/advanced_image_search" target="_blank">https://www.google.com/advanced_image_search</a> 
+  * Google Advanced Image Search &#8211; <a href="https://www.google.com/advanced_image_search" target="_blank">https://www.google.com/advanced_image_search</a>
       * You can make sure that the images you select from are licensed for reuse by scrolling down to the last field, **usage rights**, and selecting &#8220;free to use and share.&#8221; Occasionally this will result in too few choices. As long as you are using the visual material <span style="text-decoration: underline;">for the purposes of critique and analysis</span>, you should be okay.<sup>1</sup>
-  * Europeana &#8211; <a href="http://europeana.eu/" target="_blank">http://europeana.eu/</a> 
-      * The Europeana digital portal has facets for rights that appear on the left once you launch a search. You can choose to limit your search to objects that are in the public domain or free to use with attribution. 
-        <div id="attachment_356" style="width: 260px" class="wp-caption align-right">
-          <a href="http://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-14-at-12.55.34-PM.png"><img aria-describedby="caption-attachment-356" class="wp-image-356" src="http://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-14-at-12.55.34-PM.png" alt="Screen Shot 2015-02-14 at 12.55.34 PM" width="250" height="253" /></a>
-          
-          <p id="caption-attachment-356" class="wp-caption-text">
-            Europeana rights facets
-          </p>
-        </div>
-        
+  * Europeana &#8211; <a href="http://europeana.eu/" target="_blank">http://europeana.eu/</a>
+      * The Europeana digital portal has facets for rights that appear on the left once you launch a search. You can choose to limit your search to objects that are in the public domain or free to use with attribution.
+      ![Europeana rights facets](/assets/images/Screen-Shot-2015-02-14-at-12.55.34-PM.png){: .align-right}
+      
           * Creative Commons Search &#8211; <a href="http://search.creativecommons.org/" target="_blank">http://search.creativecommons.org/</a> 
               * Make sure that &#8220;use for commercial purposes&#8221; is unchecked, since you are not attempting to make money from your digital project.
               * Search using: Flickr (but you can feel free to try other sources as well).

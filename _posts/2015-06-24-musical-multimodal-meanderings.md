@@ -7,12 +7,12 @@ layout: single
 guid: http://francescagiannetti.com/?p=586
 permalink: /musical-multimodal-meanderings/
 gallery:
-  - url: https://francescagiannetti.com/wp-content/uploads/2015/06/martelly-betweeness.png
-    image_path: https://francescagiannetti.com/wp-content/uploads/2015/06/martelly-betweeness.png
+  - url: ./assets/images/martelly-betweeness.png
+    image_path: ./assets/images/martelly-betweeness.png
     alt: "Martelly betweenness"
     title: "Martelly betweenness"
-  - url: https://francescagiannetti.com/wp-content/uploads/2015/06/romani-betweeness-3.png
-    image_path: https://francescagiannetti.com/wp-content/uploads/2015/06/romani-betweeness-3.png
+  - url: ./assets/images/romani-betweeness-3.png
+    image_path: ./assets/images/romani-betweeness-3.png
     alt: "Romani betweenness"
     title: "Romani betweenness"
 categories:
@@ -22,7 +22,7 @@ I&#8217;m posting below the remarks from my part of a presentation given togethe
 
 ## Introduction
 
-I will be presenting some preliminary analysis I&#8217;ve done on an opera libretto written by Felice Romani (1788-1865), and its source play by Honoré-Antoine Richaud Martelly (1751-1817). Romani wrote _<a href="http://www.internetculturale.it:80/opencms/opencms/it/viewItemMag.jsp?id=oai%3Abid.braidense.it%3A7%3AMI0185%3AMUS0319943&case=" target="_blank">I due Figaro</a>_ in 1820 for a new production with composer Michele Carafa at La Scala of Milan. For this assignment, he chose to adapt what at the time was an immensely popular play, Martelly&#8217;s _<a href="http://gallica.bnf.fr/ark:/12148/bpt6k5801206d" target="_blank">Les deux Figaro</a>_, which first appeared on the Parisian stage in 1794 during the French Revolution, and achieved a long-lived success throughout the European continent for the next fifty or so years. Martelly himself had wished to capitalize on the fame of Beaumarchais&#8217;s protagonist with this spurious third installment in which the wily servant Figaro gets his just deserts at the hands of his noble masters.
+I will be presenting some preliminary analysis I&#8217;ve done on an opera libretto written by Felice Romani (1788-1865), and its source play by Honoré-Antoine Richaud Martelly (1751-1817). Romani wrote <a href="http://www.internetculturale.it:80/opencms/opencms/it/viewItemMag.jsp?id=oai%3Abid.braidense.it%3A7%3AMI0185%3AMUS0319943&case=" target="_blank">_I due Figaro_</a> in 1820 for a new production with composer Michele Carafa at La Scala of Milan. For this assignment, he chose to adapt what at the time was an immensely popular play, Martelly&#8217;s <a href="http://gallica.bnf.fr/ark:/12148/bpt6k5801206d" target="_blank">_Les deux Figaro_</a>, which first appeared on the Parisian stage in 1794 during the French Revolution, and achieved a long-lived success throughout the European continent for the next fifty or so years. Martelly himself had wished to capitalize on the fame of Beaumarchais&#8217;s protagonist with this spurious third installment in which the wily servant Figaro gets his just deserts at the hands of his noble masters.
 
 Although I originally wrote an analysis of Romani&#8217;s libretto and its source play when I was a grad student enrolled in Dr. Nardini&#8217;s music research methods class of the Butler School of Music (UT Austin), it has been on my mind for some time to explore ways of visualizing the process by which a librettist takes a stage play and adapts it for the lyrical stage. Since I have done a close reading, and am now experimenting with digital analysis techniques, I can offer an exploratory report on my findings, as well as remark on some of the differences in approach and process that both techniques entail.
 
@@ -45,7 +45,7 @@ These sorts of questions get to the heart of a problem described at length in an
 
 In shifting the focus of the play from a class-inflected battle of wits to a more conventional love story, Romani used some common strategies, including cuts to the male characters,  the reappropriation of dialogue to build up the lesser character of Inez, and the elimination of the harsher marital reflections of both the Count and Figaro. It had seemed to me from reading the text that the female characters enjoyed a much more prominent role in the Italian version than in the French, largely because Romani was under the obligation of providing the text of an aria for each major vocal part, not to mention a love duet.
 
-{% include figure image_path="http://francescagiannetti.com/wp-content/uploads/2015/06/martelly-romani-gender-by-scene.png" alt="Breakdown of character gender by scene in Martelly's play (left) and Romani's libretto (right)" caption="Breakdown of character gender by scene in Martelly's play (left) and Romani's libretto (right). The ladies are in blue; men in red. Made using the Treemap chart in [RAW](http://app.raw.densitydesign.org)." %}
+{% include figure image_path="/assets/images/martelly-romani-gender-by-scene.png" alt="Breakdown of character gender by scene in Martelly's play (left) and Romani's libretto (right)" caption="Breakdown of character gender by scene in Martelly's play (left) and Romani's libretto (right). The ladies are in blue; men in red. Made using the Treemap chart in [RAW](http://app.raw.densitydesign.org)." %}
 
 The above attempt to visualize the gender balance by scene yielded somewhat unexpected results. While it is clear that there are many more all-male scenes in the French play as compared to the Italian libretto (each floating mono- or dichromatic block represents a scene), there doesn&#8217;t appear to be much of an observable difference in gender count across the two texts. Romani&#8217;s libretto has a slightly higher number of female characters appearing per scene (31% when the number of female character appearances by scene are divided by the total number of appearances of characters of either gender) compared to Martelly&#8217;s play (28%), but it&#8217;s not a particularly impactful difference. It is also notable from this visualization that the women in Martelly&#8217;s play have several scenes to themselves (without men), whereas in Romani&#8217;s libretto they almost never appear without male characters. As far as the reader&#8217;s perception is concerned, it could in fact be a decisive factor that so many scenes in Martelly&#8217;s play are of men only. But at five acts and 77 scenes, Martelly&#8217;s play is also much longer than Romani&#8217;s adaptation, which is comprised of only two acts of 36 scenes.
 

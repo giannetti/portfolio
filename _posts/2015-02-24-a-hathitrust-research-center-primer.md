@@ -8,7 +8,7 @@ guid: http://francescagiannetti.com/?p=475
 permalink: /a-hathitrust-research-center-primer/
 excerpt: "Remarks from a talk given at a HathiTrust symposium held at Rutgers in February 2015"
 header:
-  overlay_image: /wp-content/uploads/2015/02/Screen-Shot-2015-02-24-at-1.15.18-AM.png
+  overlay_image: /assets/images/Screen-Shot-2015-02-24-at-1.15.18-AM.png
   overlay_filter: 0.3
 toc: true
 toc_label: "Contents"
@@ -53,13 +53,7 @@ The Workset Builder is a search interface for the HathiTrust public domain corpu
 
 The algorithms currently offered through the HTRC portal include, on the simpler end, term frequencies and word clouds, and on the more complex end, named entity extraction (person, location, organization, etc.), LDA topic modeling, and Dunning log likelihood, which can be used to compare and contrast two different worksets. When you apply an algorithm to a workset, it becomes a job, and can be monitored for status and results on the Results page. Harriet Green and Sayan Bhattacharyya, both of UIUC, prepared <a href="https://drive.google.com/file/d/0ByTkFSkY8lF7TGM5dEtPWXlCWTQ/view?usp=sharing" target="_blank">this wonderful handout</a> listing and describing the HTRC portal algorithms.
 
-<div id="attachment_503" style="width: 294px" class="wp-caption aligncenter">
-  <a href="http://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-24-at-12.55.59-AM.png"><img aria-describedby="caption-attachment-503" class="size-medium wp-image-503" src="http://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-24-at-12.55.59-AM-284x300.png" alt="Topic model of works by Edgar Allan Poe. Workset compiled by user agorton." width="284" height="300" srcset="https://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-24-at-12.55.59-AM-284x300.png 284w, https://francescagiannetti.com/wp-content/uploads/2015/02/Screen-Shot-2015-02-24-at-12.55.59-AM.png 564w" sizes="(max-width: 284px) 100vw, 284px" /></a>
-  
-  <p id="caption-attachment-503" class="wp-caption-text">
-    Topic model of works by Edgar Allan Poe. Workset compiled by user agorton.
-  </p>
-</div>
+{% include figure image_path="../assets/images/Screen-Shot-2015-02-24-at-12.55.59-AM.png" alt="Topic model of works by Edgar Allan Poe. Workset compiled by user agorton." caption="Topic model of works by Edgar Allan Poe. Workset compiled by user agorton." %}
 
 ## <a href="https://sandbox.htrc.illinois.edu/HTRC-UI-Portal2/" target="_blank">HTRC Sandbox</a>
 
@@ -69,13 +63,7 @@ In addition to HTRC portal, there is a sandbox stack with the same tools, intend
 
 Currently on the sandbox stack is the HTRC instance of Bookworm. Bookworm is a <a href="http://bookworm.culturomics.org/" target="_blank">Culturomics project</a> that is co-directed by Ben Schmidt (Northeastern University) and Erez Aiden (Rice University). Loosely based on the Google Ngram viewer, Bookworm&#8217;s browser interface provides a time series view into text corpora that encourages the exploration of large-scale trends. The HTRC&#8217;s implementation of Bookworm certainly counts among its most user friendly tools, which is perhaps why Stephen Downie of UIUC recommended it as the first step of a digital pedagogy workflow in a recent <a href="http://d2i.indiana.edu/sites/default/files/organisciak-poster-1.pdf" target="_blank">poster presentation</a>. Although still a prototype over 250,000 volumes, its interactivity and metadata facets make the HTRC Bookworm quite useful for hypothesis forming.
 
-<div id="attachment_518" style="width: 810px" class="wp-caption aligncenter">
-  <a href="http://francescagiannetti.com/wp-content/uploads/2015/02/bookworm.png"><img aria-describedby="caption-attachment-518" class="size-full wp-image-518" src="http://francescagiannetti.com/wp-content/uploads/2015/02/bookworm.png" alt="&quot;guerre&quot; and &quot;amour&quot; in French texts" width="800" height="260" srcset="https://francescagiannetti.com/wp-content/uploads/2015/02/bookworm.png 800w, https://francescagiannetti.com/wp-content/uploads/2015/02/bookworm-300x98.png 300w, https://francescagiannetti.com/wp-content/uploads/2015/02/bookworm-640x208.png 640w" sizes="(max-width: 800px) 100vw, 800px" /></a>
-  
-  <p id="caption-attachment-518" class="wp-caption-text">
-    &#8220;guerre&#8221; and &#8220;amour&#8221; in French texts
-  </p>
-</div>
+{% include figure image_path="../assets/images/bookworm.png" alt="war and love in French texts" caption="&#8220;guerre&#8221; and &#8220;amour&#8221; in French texts" %}
 
 ## <a href="https://sandbox.htrc.illinois.edu/HTRC-UI-Portal2/Features" target="_blank">Extracted Features </a>
 
@@ -129,7 +117,7 @@ So here are a few ideas to introduce the HTRC to the Rutgers (digital) humanitie
 
 ### Resources and Guides
 
-HathiTrust Research Center Wiki. _HathiTrust Research_ _Community Pages_. <a href="https://wiki.htrc.illinois.edu/display/COM/HathiTrust+Research+Community+Pages" target="_blank">https://wiki.htrc.illinois.edu/display/COM/HathiTrust+Research+Community+Pages</a>.
+HathiTrust Research Center Wiki. _HathiTrust Research Community Pages_. <a href="https://wiki.htrc.illinois.edu/display/COM/HathiTrust+Research+Community+Pages" target="_blank">https://wiki.htrc.illinois.edu/display/COM/HathiTrust+Research+Community+Pages</a>.
 
 University Library, University of Illinois at Urbana Champaign. Introduction to HathiTrust Research Center. <a href="http://uiuc.libguides.com/htrcguide" target="_blank"><span class="guideurl">http://uiuc.libguides.com/htrcguide</span></a>.
 
