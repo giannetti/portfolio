@@ -82,7 +82,7 @@ author:
     - label: "Mastodon"
       icon: "fab fa-fw fa-mastodon"
       url: "https://mstdn.social/@jo_frankie"
-    - label: "Bluesky"
+    - label: " Bluesky"
       icon: "fa-brands fa-bluesky"
       url: "https://bsky.app/profile/jofrankie.bsky.social"
     - label: "GitHub"
