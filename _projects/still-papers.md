@@ -21,7 +21,7 @@ gallery:
     alt: "Still Papers image 3"
 ---
 
-The [Peter Still Digital Edition](https://stillpapers.org/) (57 items) is chiefly composed of correspondence (1850-1875) relating to Still's efforts to raise funds to purchase his wife, Vina Still, and their three children, Peter Jr., Levin, and Catharine, all held as slaves in Alabama. By 1850, the date of the first document in this collection, Peter Still had secured his own freedom at nearly 50 years of age with the help of Joseph and Isaac Friedman of Tuscumbia, Alabama. A secondary subject of the letters concerns Kate E. R. Pickard's work on a biography of Still, _The Kidnapped and the Ransomed: The narrative of Peter and Vina Still after forty years of slavery_, published in 1856.
+The [Peter Still Digital Edition](https://stillpapers.org/) (57 items) is chiefly composed of correspondence (1850-1875) relating to Still's efforts to raise funds to purchase his wife, Vina Still, and their three children, Peter Jr., Levin, and Catharine, all still enslaved in Alabama. By 1850, the date of the first document in this collection, Peter Still had secured his own freedom at nearly 50 years of age with the cooperation of Joseph and Isaac Friedman of Tuscumbia, Alabama. A secondary subject of the letters concerns Kate E. R. Pickard's work on a biography of Still, _The Kidnapped and the Ransomed: The narrative of Peter and Vina Still after forty years of slavery_, published in 1856.
 
 {% include gallery caption="A page from the memo book, an example of the markup, and the family record." %}
 

@@ -82,7 +82,7 @@ You are looking for a still frame and a promotional image or film (for example,
           <p id="caption-attachment-356" class="wp-caption-text">
             Europeana rights facets
           </p>
-        </div> 
+        </div>
         
           * Creative Commons Search &#8211; <a href="http://search.creativecommons.org/" target="_blank">http://search.creativecommons.org/</a> 
               * Make sure that &#8220;use for commercial purposes&#8221; is unchecked, since you are not attempting to make money from your digital project.
@@ -91,7 +91,7 @@ You are looking for a still frame and a promotional image or film (for example,
           * Internet Culturale &#8211; <a href="http://www.internetculturale.it/opencms/opencms/it/index.html" target="_blank">http://www.internetculturale.it/opencms/opencms/it/index.html</a> 
               * Make sure the **Biblioteca digitale** radio button is selected. The default selection is _cataloghi_ (which is useful in its own right when you&#8217;re trying to discover Italian language books on a given subject).
               * You will find it productive to limit your search results by **formato digitale**: jpeg or **formato digitale**: tiff.
-              * You may also find it productive to search instead on keywords: Vittorio De Sica, and perhaps limiting by **soggetto**: fotografia di set cinematografico, or **soggetto**: cinema. But the results will no longer be about _Ladri_.</ul> 
+              * You may also find it productive to search instead on keywords: Vittorio De Sica, and perhaps limiting by **soggetto**: fotografia di set cinematografico, or **soggetto**: cinema. But the results will no longer be about _Ladri_.
         
         Although I&#8217;ve asked you to evaluate four sources, you only need to select two (2) digital objects for this question. Try to cite them using the MLA citation style, for which you will need at the very least a creator, a title, a date (n.d. is acceptable in case there isn&#8217;t one), a medium, and a source (more on the MLA citation style <a href="https://owl.english.purdue.edu/owl/resource/747/09/" target="_blank">here</a>). If ever you find an image online for which this information is in scant supply, you can try a reverse image search to see if another website has cataloged the object more thoroughly. I suggest <a href="https://www.tineye.com/" target="_blank">TinEye </a>or <a href="http://www.google.com/insidesearch/features/images/searchbyimage.html" target="_blank">Google Search By Image</a>.
         
