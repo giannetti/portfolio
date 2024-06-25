@@ -50,6 +50,13 @@ comments:
   disqus:
     shortname: "portfolio-84oensokxg"
 
+# analytics
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-X1DBCHSZPL"
+    anonymize_ip: false #default
+
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
