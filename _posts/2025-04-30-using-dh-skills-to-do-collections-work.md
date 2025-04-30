@@ -7,7 +7,7 @@ categories:
     - librarianship
 ---
 
-I recall once seeing a CFP about applications of digital humanities methods to (traditional) library work. Librarians are a notoriously risk-adverse group, and this call seemed oriented towards proving that the scary new thing could actually help our conservative profession do its bread-and-butter work. DH; it's not so bad! I recall thinking at the time that this was sort of an interesting idea, that I had certainly done it, but nothing that rose to the level of a research article or conference paper. This post falls into the category of ordinary librarian task made easier by DH. Since libraries, and higher ed more generally, are once again facing alarming headwinds, and I'm hearing calls to "get back to basics," and just not do the more advanced research library stuff for a while, I thought it might be advantageous to show in some detail how being a DH or data librarian can help with the more traditional subject librarian portfolio. [Matthew Lincoln](https://mstdn.social/@mdlincoln) once quipped on the old site that 90% of DH was a table join, and I laughed because it was kind of true, especially in the broader sense of comparing these data to those other data and drawing new insights from the juxtaposition. This post, however, is about a literal table join, lol.
+I recall once seeing a CFP about applications of digital humanities methods to (traditional) library work. Librarians are a notoriously risk-adverse group, and this call seemed oriented towards proving that the scary new thing could actually help our conservative profession do its bread-and-butter work. DH; it's not so bad! I recall thinking at the time that this was sort of an interesting idea, that I had certainly done it, but nothing that rose to the level of a research article or conference paper. This post falls into the category of ordinary librarian task made easier by DH. Since libraries, and higher ed more generally, are once again facing alarming headwinds, and I'm hearing calls to "get back to basics," and just not do the more advanced research library stuff for a while, I thought it might be advantageous to show in some detail how DH-y or data librarian-y skills can help with the more traditional subject librarian portfolio. [Matthew Lincoln](https://mstdn.social/@mdlincoln) once quipped on the old site that 90% of DH was a table join, and I laughed because it was true, especially in the broader sense of comparing these data to those other data and drawing new insights from the juxtaposition. This post, however, is about a literal table join, lol.
 
 Since summer is around the corner, and I have fewer course and workshop requests, I am turning my attention to collections weeding, which is to say pruning older, disused books to make way for newer materials. In addition to being a DH librarian, I am also a subject liaison to various language and literature fields, which means the responsibility for our congested P class falls more or less squarely on my shoulders. This section of the stacks has been a problem for many years, but since we also loan more P classified volumes than any other Library of Congress class, it never rose to the level of a crisis in my mind. Although lately our space issues have been multiplying, hence the added incentive to give it a look. Our print retention guidelines have this to say about withdrawing volumes:
 
@@ -66,7 +66,7 @@ split -l 250000 hathi_full_pd.txt segment
 
 Loading the data into my RStudio session looked like this. HathiTrust publishes their hathifiles without a header row, so while I'm reading in all those segment files, I am simultaneously adding a header row using a function. The resulting objects in my environment that I am going to interact with are called `alex_pclass_oclc` and `htseg01` through `htseg31`.
 
-```{r}
+```
 # load library data
 alex_pclass <- read_csv("alex_alstackc_pclass_fewerthan5circs_pre1930pub_oclc.csv")
 alex_pclass <- rename(alex_pclass, oclc = `OCLC Control Number (035a)`)
@@ -94,7 +94,7 @@ list2env(file_list, envir = .GlobalEnv)
 
 While attempting to convert the OCLC numbers to a numeric data type, I discovered that the HTDL sometimes stores more than one OCLC number per cell. This will interfere with my table join, so I need to split up those values into separate columns. For the time being, I decided not to bother checking anything other than the first OCLC number, but I may circle back and look at the others later. I wrote this function to split up the values, keep the first value in a column called `oclc`, store the second value in `oclc2`, and dump anything after that. Then, the for loop applies the function to each segment dataframe in my environment.
 
-```{r}
+```
 # separate oclc values, if more than one, and re-type as numeric
 oclc_split <- function(data, column_name) {
   split_values <- strsplit(as.character(data[[column_name]]), ",")
@@ -115,7 +115,7 @@ for (i in 1:31) {
 
 Finally, I arrived at the point where I could join the HathiTrust data to our library P class data. I'm using the `semi_join()` function from the dplyr library to keep any and all rows in my library's data that match an OCLC number (just the first one, remember) in the HathiTrust data. There's another for loop to go through all those HTDL segments one by one and copy the matches to the exact same objects. The last function rolls all the matches together into one dataframe that I can then write to file. There were 3,632 matches out of 5,147, which is pretty good!
 
-```{r}
+```
 # join with alex p class data
 oclc_compare <- function(dataset1, dataset2, shared_column) {
   matches <- semi_join(dataset1, dataset2, by = shared_column)
@@ -145,6 +145,8 @@ write_csv(combined_data, "alex_pclass_in_htdl_fullview.csv")
 It's likely that we will withdraw most of these books, freeing up some desperately needed space on our second and third floors. Scanning the titles gave me a few moments of doubt (Dinah Craik! Anatole France. Joaquin Miller. Really?), but in pretty much every case these were works that are widely held, often elsewhere in our selfsame libraries, either in the same or in later editions. Book historians and scholarly editors know that different editions of a work are not "copies" and not interchangeable, but the reality for us is that we probably no longer need ten versions of Theodore Dreiser's _An American Tragedy_, given the pressure on our spaces. There was also plenty of, dare I say it, B and C list literature, for which HathiTrust digital access is certainly good enough. I paused when I saw [_Some queer Americans and other stories_](https://catalog.hathitrust.org/Record/012453512)... Surely not "queer" like that, right? Indeed, it is a peculiar tome exoticizing and patronizing the residents of rural Appalachia. There were also plenty of vaguely prurient sounding titles like [_The College Widow_](https://catalog.hathitrust.org/Record/102426649) and [_The story of a bad boy_](https://catalog.hathitrust.org/Record/001030910), which were funny to look at, but again, nothing to agonize over in terms of keeping the print.
 
 Incidentally, I am rusty at writing functions in R, and after fumbling through some Google search results, I caved and opened my institution's Copilot instance. While the results weren't always just right on the first or second try, I have to admit that Copilot saved me a ton of time sifting through stackoverflow replies.
+
+Find the whole script as a GitHub Gist at <https://gist.github.com/giannetti/752ff7760f633f7cbfd194a5a1212948>.
 
 [^1]: See ["Using AWK to Filter Rows"](https://www.tim-dennis.com/data/tech/2016/08/09/using-awk-filter-rows.html) by Tim Dennis for a very handy tutorial.
 
