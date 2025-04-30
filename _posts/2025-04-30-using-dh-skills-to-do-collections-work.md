@@ -66,7 +66,7 @@ split -l 250000 hathi_full_pd.txt segment
 
 Loading the data into my RStudio session looked like this. HathiTrust publishes their hathifiles without a header row, so while I'm reading in all those segment files, I am simultaneously adding a header row using a function. The resulting objects in my environment that I am going to interact with are called `alex_pclass_oclc` and `htseg01` through `htseg31`.
 
-```
+```r
 # load library data
 alex_pclass <- read_csv("alex_alstackc_pclass_fewerthan5circs_pre1930pub_oclc.csv")
 alex_pclass <- rename(alex_pclass, oclc = `OCLC Control Number (035a)`)
@@ -94,7 +94,7 @@ list2env(file_list, envir = .GlobalEnv)
 
 While attempting to convert the OCLC numbers to a numeric data type, I discovered that the HTDL sometimes stores more than one OCLC number per cell. This will interfere with my table join, so I need to split up those values into separate columns. For the time being, I decided not to bother checking anything other than the first OCLC number, but I may circle back and look at the others later. I wrote this function to split up the values, keep the first value in a column called `oclc`, store the second value in `oclc2`, and dump anything after that. Then, the for loop applies the function to each segment dataframe in my environment.
 
-```
+```r
 # separate oclc values, if more than one, and re-type as numeric
 oclc_split <- function(data, column_name) {
   split_values <- strsplit(as.character(data[[column_name]]), ",")
@@ -115,7 +115,7 @@ for (i in 1:31) {
 
 Finally, I arrived at the point where I could join the HathiTrust data to our library P class data. I'm using the `semi_join()` function from the dplyr library to keep any and all rows in my library's data that match an OCLC number (just the first one, remember) in the HathiTrust data. There's another for loop to go through all those HTDL segments one by one and copy the matches to the exact same objects. The last function rolls all the matches together into one dataframe that I can then write to file. There were 3,632 matches out of 5,147, which is pretty good!
 
-```
+```r
 # join with alex p class data
 oclc_compare <- function(dataset1, dataset2, shared_column) {
   matches <- semi_join(dataset1, dataset2, by = shared_column)
