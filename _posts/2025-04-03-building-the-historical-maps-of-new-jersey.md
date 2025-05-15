@@ -4,7 +4,7 @@ categories:
   - Blog
 tags:
   - GIS
-link: https://geobtaa.blogspot.com/2023/02/rutgers-joins-btaa-geoportal.html
+link: https://geobtaa.blogspot.com/2025/04/building-historical-maps-of-new-jersey.html
 ---
 
 An interview of Mike Siegel of the department of Geography, with Sue Oldenburg.
