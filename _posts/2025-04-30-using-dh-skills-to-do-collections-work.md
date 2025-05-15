@@ -148,6 +148,37 @@ Incidentally, I am rusty at writing functions in R, and after fumbling through s
 
 Find the whole script as a GitHub Gist at <https://gist.github.com/giannetti/752ff7760f633f7cbfd194a5a1212948>.
 
+---
+
+## Addendum added 2025-05-15
+
+It turns out we are conservative about weeding too (ha). I was asked to show if we have any print duplication of these volumes in our library system. And so I once again relied on the fact that we mostly have OCLC numbers to do another join. I queried the analytics tool of our catalog for all P class volumes NOT in Alexander Library and came up with a list.
+
+```r
+# draw everything in p class that is not in Alex, dropping low use filters b/c not important
+notalex_pclass <- read_csv("NOTalex_pclass_pre1930.csv")
+notalex_pclass <- rename(notalex_pclass, oclc = `OCLC Control Number (035a)`)
+notalex_pclass <- notalex_pclass %>% filter(!is.na(oclc))
+```
+
+I did a slightly modified join with the HathiTrust volumes to show my receipts, once again looping through all the segment dataframes. A note that I used the `multiple` argument of "any," which will capture **any** match in the HTDL dataset. It doesn't really matter to me how many matches there are, just so long as there is one. I also programmatically created an HTDL URI based on the pattern they follow, so that any user can hopefully just click a link to see the digital full view.
+
+```r
+# trying this differently to retain fields from HTDL
+oclc_match <- function(dataset1, dataset2, shared_column) {
+  matches <- inner_join(dataset1, dataset2, by = shared_column, multiple = "any") %>% 
+    mutate(uri = paste0("https://hdl.handle.net/2027/", htid, sep = ""))
+  return(matches)
+}
+```
+
+Next, I did another inner join with the "not Alex" dataset to find any match in our libraries. The resulting dataframe, `print_overlap` now has redundant metadata fields, which I pruned a bit to show the esssential. This join showed that we have 1,204 P class volumes in Alex that are duplicated elsewhere in our libraries and available in full view in HathiTrust. Hey, this should still help recover space!
+
+```r
+print_overlap <- combined_data %>% 
+  inner_join(notalex_pclass, by = "oclc", multiple = "any")
+```
+
 [^1]: See ["Using AWK to Filter Rows"](https://www.tim-dennis.com/data/tech/2016/08/09/using-awk-filter-rows.html) by Tim Dennis for a very handy tutorial.
 
 [^2]: For more split examples, see <https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026049>.
