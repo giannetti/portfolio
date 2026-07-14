@@ -10,7 +10,7 @@ guid: http://francescagiannetti.com/?page_id=28
 ---
 ## Refereed Articles
 
-Giannetti, Francesca. "Notes from the Front: Resisting Maximalism in Your Minimal Edition." _Journal of the Text Encoding Initiative_, no. Issue 19 (2026). <https://doi.org/10.4000/1670u>.
+Giannetti, Francesca. "Notes from the Front: Resisting Maximalism in Your Minimal Edition." _Journal of the Text Encoding Initiative_, Issue 19 (2026). <https://doi.org/10.4000/1670u>.
 
 Downie, J. Stephen, Sayan Bhattacharyya, **Francesca Giannetti**, Eleanor Dickson Koehl, and Peter Organisciak. [“The HathiTrust Digital Library's Potential for Musicology Research.”](https://doi.org/10.1007/s00799-020-00283-7) _International Journal on Digital Libraries_ 21, no. 4 (2020): 343-358, doi:10.1007/s00799-020-00283-7. [Preprint](https://doi.org/doi:10.7282/t3-y1bk-wf87)
 
@@ -46,7 +46,7 @@ Giannetti, Francesca. Review of _Eredità di Carta: Biblioteche private e circol
 
 ## Selected Presentations
 
-Giannetti, Francesca. "Reading the sky on AI and antiquity: An exploratory analysis of Bluesky posts," AI and the Study of Antiquity, Rutgers University, New Brunswick, NJ, March 13, 2026.
+Giannetti, Francesca. ["Reading the sky on AI and antiquity: An exploratory analysis of Bluesky posts,"](https://slides.francescagiannetti.com/reading-the-sky_slides.html) AI and the Study of Antiquity, Rutgers University, New Brunswick, NJ, March 13, 2026.
 
 Giannetti, Francesca, ["The accidental maximalist: Or, what’s so minimal about minimal editions?,"](https://doi.org/10.5281/zenodo.14014076) TEI 2024: Texts, languages and communities, Buenos Aires, Argentina, October 9, 2024.
 
