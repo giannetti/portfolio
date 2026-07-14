@@ -2,13 +2,15 @@
 id: 28
 title: Research
 date: 2021-05-18
-last_modified_at: 2025-05-15T13:41:00 -04:00
+last_modified_at: 2026-07-13T21:39:00 -04:00
 permalink: /research/
 author: Francesca
 layout: single
 guid: http://francescagiannetti.com/?page_id=28
 ---
 ## Refereed Articles
+
+Giannetti, Francesca. "Notes from the Front: Resisting Maximalism in Your Minimal Edition." _Journal of the Text Encoding Initiative_, no. Issue 19 (2026). <https://doi.org/10.4000/1670u>.
 
 Downie, J. Stephen, Sayan Bhattacharyya, **Francesca Giannetti**, Eleanor Dickson Koehl, and Peter Organisciak. [“The HathiTrust Digital Library's Potential for Musicology Research.”](https://doi.org/10.1007/s00799-020-00283-7) _International Journal on Digital Libraries_ 21, no. 4 (2020): 343-358, doi:10.1007/s00799-020-00283-7. [Preprint](https://doi.org/doi:10.7282/t3-y1bk-wf87)
 
@@ -44,6 +46,8 @@ Giannetti, Francesca. Review of _Eredità di Carta: Biblioteche private e circol
 
 ## Selected Presentations
 
+Giannetti, Francesca. "Reading the sky on AI and antiquity: An exploratory analysis of Bluesky posts," AI and the Study of Antiquity, Rutgers University, New Brunswick, NJ, March 13, 2026.
+
 Giannetti, Francesca, ["The accidental maximalist: Or, what’s so minimal about minimal editions?,"](https://doi.org/10.5281/zenodo.14014076) TEI 2024: Texts, languages and communities, Buenos Aires, Argentina, October 9, 2024.
 
 **Giannetti, Francesca** and Catherine Naeve, "Visualizing Sancho’s Correspondence," Conference on the life and work of Ignatius Sancho (c. 1729–1780), Center for Cultural Analysis, Rutgers–New Brunswick, January 19, 2023.
@@ -56,7 +60,7 @@ Giannetti, Francesca. "'In an alien land': Finding Solace from Librarian-Led Dig
 
 Giannetti, Francesca. "'In an alien land': Finding Solace from Librarian-Led Digital Humanities Pedagogy in a Pandemic," Poster presented at the TEI (Text Encoding Initiative) Conference, online, October 26, 2021.
 
-Giannetti, Francesca. "The Directory of Digital Scholarship inMusic: reconciling usefulness and sustainability in an online directory." Lightning talk presented at the Joint Meeting of the New England, Texas, and Atlantic chapters of the Music Library Association, online, October 8, 2021.
+Giannetti, Francesca. "The Directory of Digital Scholarship in Music: reconciling usefulness and sustainability in an online directory." Lightning talk presented at the Joint Meeting of the New England, Texas, and Atlantic chapters of the Music Library Association, online, October 8, 2021.
 
 Bode, Katherine (presenter) and **Francesca Giannetti**, Andrew Goldstone, Yohei Igarashi (discussants). "DH Futures: A conversation about archives, data, and the digital humanities," Center for Cultural Analysis, Rutgers University, New Brunswick, NJ, January 30, 2020.
 
